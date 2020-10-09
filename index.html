@@ -28,22 +28,41 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+    <main>
     <div class="container">
-        <form class ="hours">
-            <input type="text" name="eight" value="8:00 AM"><br>
-            <input type="text" name="nine" value="9:00 AM"><br>
-            <input type="text" name="ten" value="10:00 AM"><br>
-            <input type="text" name="eleven" value="11:00 AM"><br>
-            <input type="text" name="twelve" value="12:00 PM"><br>
-            <input type="text" name="one" value="1:00 PM"><br>
-            <input type="text" name="two" value="2:00 PM"><br>
-            <input type="text" name="three" value="3:00 PM"><br>
-            <input type="text" name="four" value="4:00 PM"><br>
-            <input type="text" name="five" value="5:00 PM"><br>
-            <br>
+        <form class ="hours" id="workHours">
+            <form>
+                <div class="form-group">
+                  <input type="email" class="form-control user-input" id="9" placeholder="9:00 AM">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control user-input" id="10" placeholder="10:00 AM">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control user-input" id="11" placeholder="11:00 AM">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control user-input" id="12" placeholder="12:00 PM">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control user-input" id="13" placeholder="1:00 PM">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control user-input" id="14" placeholder="2:00 PM">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control user-input" id="15" placeholder="3:00 PM">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control user-input" id="16" placeholder="4:00 PM">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control user-input" id="17" placeholder="5:00 PM">
+                  </div>
+                  <button type="button" class="saveBtn">Save</button>
           </form>
     </div>
-
+</main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
