@@ -5,6 +5,8 @@ var d = new Date();
 
     document.getElementById("currentDay").innerHTML =d;
 
+var saveButton = document.querySelector(".savebtn");
+
 var nineInput = document.querySelector("#nine");
 var tenInput = document.querySelector("#ten");
 var elevenInput = document.querySelector("#eleven");
@@ -27,19 +29,11 @@ var scheduler = {
     fivePM: seventeenInput.value.trim()
   };
 
-  
-  //localStorage.setItem("user", JSON.stringify(user));
-
-  
-  //var lastUser = JSON.parse(localStorage.getItem("user"));
-
-    //$(".saveBtn").on("click", function(){
-        //var input = document.getElementsByClassName("user-input");
-    //alert("do you want to save these changes?");
-    //})
-    //function renderLastRegistered() {
-       // var email = localStorage.getItem("user-input");
-        //localStorage.setItem("email", email);
+  saveButton.addEventListener("click"); function renderSchedule(){
+    localStorage.setItem("scheduler", JSON.stringify(scheduler));
+    var scheduleDisplay = JSON.parse(localStorage.getItem("scheduler"));
+  }
+ 
     
     
     
